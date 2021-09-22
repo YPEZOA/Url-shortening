@@ -1,0 +1,38 @@
+.navbar {
+  padding: 40px;
+  padding-left: 10em;
+  padding-right: 10em;
+  box-shadow: 2px 2px 5px grey;
+  .navbar-brand a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 900;
+  }
+  ul {
+    display: flex;
+    list-style: none;
+    li a {
+      text-decoration: none;
+      color: grey;
+      margin-right: 20px;
+    }
+  }
+  .other-buttons {
+    ul {
+      display: flex;
+      list-style: none;
+      li a {
+        text-decoration: none;
+      }
+      li .sign-up {
+        background-color: red;
+        padding: 10px;
+        border-radius: 30px;
+        padding-left: 16px;
+        padding-right: 16px;
+        color: #fff;
+        font-weight: 600;
+      }
+    }
+  }
+}
