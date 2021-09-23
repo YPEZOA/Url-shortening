@@ -1,0 +1,41 @@
+.container-field {
+  display: flex;
+  justify-content: space-evenly;
+  background-image: url("../../../../assets/images/bg-boost-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #3a3054;
+  margin-top: 90px;
+  padding: 40px;
+  border-radius: 7px;
+  .form-group-field {
+    width: 85%;
+    .form-control {
+      height: 50px;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+
+  .button {
+    border: none;
+    padding: 12px;
+    padding-left: 25px;
+    border-radius: 5px;
+    padding-right: 25px;
+    font-weight: 900;
+    background-color: #2bd0d0;
+    color: #fff;
+  }
+  .alert-message {
+    position: absolute;
+    color: red;
+    font-weight: 500;
+    font-style: italic;
+  }
+}
+.errorField {
+  border-color: red;
+  color: red;
+}

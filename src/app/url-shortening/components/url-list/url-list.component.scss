@@ -1,0 +1,27 @@
+.contain-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-radius: 7px;
+  margin-top: 20px;
+  .contain-button {
+    .copied-button {
+      border: 0;
+      border-radius: 4px;
+      padding: 8px;
+      padding-left: 20px;
+      padding-right: 20px;
+      font-weight: 600;
+      font-size: 13px;
+      color: #fff;
+      background-color: #2bd0d0;
+      margin-left: 20px;
+    }
+    span {
+      display: inline-block;
+      color: #2bd0d0;
+    }
+  }
+}

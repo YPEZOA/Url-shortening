@@ -1,0 +1,9 @@
+<div *ngFor="let url of listUrls" class="contain-list">
+  <span>{{ url.longUrl }}</span>
+  <div class="contain-button">
+    <span>{{ url.shortUrl }}</span>
+    <button [cdkCopyToClipboard]="url.shortUrl" class="copied-button">
+      {{ buttonText }}
+    </button>
+  </div>
+</div>

@@ -1,8 +1,9 @@
 .navbar {
   padding: 40px;
-  padding-left: 10em;
-  padding-right: 10em;
+  padding-left: 15em;
+  padding-right: 15em;
   box-shadow: 2px 2px 5px grey;
+  background-color: #fff;
   .navbar-brand a {
     color: #000;
     text-decoration: none;
@@ -25,7 +26,7 @@
         text-decoration: none;
       }
       li .sign-up {
-        background-color: red;
+        background-color: #2bd0d0;
         padding: 10px;
         border-radius: 30px;
         padding-left: 16px;

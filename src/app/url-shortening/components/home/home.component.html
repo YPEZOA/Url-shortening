@@ -1,4 +1,22 @@
 <div class="main-container">
   <app-header></app-header>
+  <section class="slider">
+    <div class="contain-info">
+      <h1>More than just shorter links</h1>
+      <p>
+        Build your brand's recognition and get detailed insights on how your
+        links are perfoming.
+      </p>
+      <a href="#">Get started</a>
+    </div>
+    <div class="contain-image">
+      <img
+        src="../../../../assets/images/illustration-working.svg"
+        alt="image"
+      />
+    </div>
+  </section>
+  <app-input-shorten (fieldText)="shorteningUrl($event)"></app-input-shorten>
+  <app-url-list></app-url-list>
   <app-footer></app-footer>
 </div>

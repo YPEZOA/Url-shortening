@@ -1,0 +1,24 @@
+<div class="container-field">
+  <div class="form-group-field">
+    <input
+      type="text"
+      name="url"
+      id="url"
+      class="form-control"
+      placeholder="Shorten a link here..."
+      (keyup)="changeValue($event)"
+      (keyup.enter)="emitTextChanged()"
+      [formControl]="text"
+      [ngClass]="{ errorField: validateField() || invalidUrl }"
+      autofocus
+      required="true"
+    />
+    <span class="alert-message" *ngIf="validateField() || invalidUrl"
+      >Please add a valid link</span
+    >
+  </div>
+
+  <div class="form-group">
+    <button class="button" (click)="emitTextChanged()">Shorten it!</button>
+  </div>
+</div>
