@@ -10,8 +10,6 @@ import { ShortenService } from '../../services/shorten.service';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-  urls!: string[];
-
   constructor(private shortService: ShortenService) {}
 
   ngOnInit(): void {}
@@ -35,8 +33,6 @@ export class HomeComponent implements OnInit {
         urlsAlmacened.push(newUrl);
         localStorage.setItem('short-url', JSON.stringify(urlsAlmacened));
         this.shortService.urlList.next(urlsAlmacened);
-        this.urls = this.shortService.urlList.getValue();
-        console.log(this.urls);
       });
   }
 }
